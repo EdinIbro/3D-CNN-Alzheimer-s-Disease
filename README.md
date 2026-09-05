@@ -1,10 +1,30 @@
+# 3D CNN for Alzheimer's Disease Biomarker Classification
+
 Alzheimer's disease (AD) is the most common cause of dementia and is characterized by progressive neurodegeneration associated with the accumulation of amyloid-$\beta$ (A$\beta$) plaques and tau neurofibrillary tangles. The identification of imaging biomarkers capable of detecting these pathological changes at early stages remains one of the major challenges in Alzheimer's disease research.
 
 This thesis investigates the potential of deep learning techniques for the automatic classification of individuals according to their amyloid-$\beta$ and tau biomarker status using diffusion Magnetic Resonance Imaging (dMRI).
 
-The study was conducted on a cohort of 317 subjects derived from the Alzheimer's Disease Neuroimaging Initiative (ADNI), including biologically negative (A$\beta^{-}$/Tau$^{-}$) and biologically positive (A$\beta^{+}$/Tau$^{+}$) participants. Fractional Anisotropy (FA) and Mean Diffusivity (MD) maps were independently used to train a three-dimensional Convolutional Neural Network (3D CNN). Model performance was evaluated using a five-fold stratified cross-validation procedure and standard classification metrics, including Accuracy, Precision, Recall, and Macro F1-score.
+---
 
-To improve model interpretability, gradient-based saliency maps were generated to identify the brain regions that contributed most to the network predictions. The proposed framework achieved promising classification performance for both diffusion-derived biomarkers, with the MD-based model slightly outperforming the FA-based model, while both modalities reached classification accuracies close to 70\%. The saliency maps consistently highlighted anatomically meaningful white matter regions, providing biologically plausible explanations for the model predictions and supporting the interpretability of the proposed framework.
+## 📌 Dataset & Methodology
 
-Overall, the results demonstrate that diffusion MRI contains meaningful microstructural information for distinguishing individuals according to their amyloid-$\beta$ and tau biomarker status. The proposed framework highlights the potential of combining diffusion MRI, deep learning, and explainable artificial intelligence as a promising approach for the biological characterization of Alzheimer's disease.
+* **Cohort:** 317 subjects from the Alzheimer's Disease Neuroimaging Initiative (ADNI), divided into biologically negative (A$\beta^{-}$/Tau$^{-}$) and positive (A$\beta^{+}$/Tau$^{+}$) groups.
+* **Input Modalities:** Fractional Anisotropy (FA) and Mean Diffusivity (MD) 3D maps.
+* **Model Architecture:** Three-Dimensional Convolutional Neural Network (3D CNN).
+* **Validation Scheme:** 5-fold stratified cross-validation evaluated via Accuracy, Precision, Recall, and Macro F1-score.
+* **Interpretability:** Gradient-based saliency maps to identify key brain regions driving network predictions.
+
+---
+
+## 📊 Results & Findings
+
+* Both diffusion-derived biomarkers achieved solid classification performance, reaching accuracies close to **70%**.
+* The **MD-based model** slightly outperformed the **FA-based model**.
+* Gradient-based saliency maps consistently highlighted anatomically meaningful white matter regions, offering biologically plausible explanations.
+
+---
+
+## 💡 Conclusion
+
+Diffusion MRI contains critical microstructural information for distinguishing amyloid-$\beta$ and tau status. Combining dMRI, 3D CNNs, and Explainable AI (XAI) presents a promising framework for the biological characterization of Alzheimer's disease.
 
