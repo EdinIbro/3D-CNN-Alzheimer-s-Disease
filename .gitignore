@@ -1,0 +1,11 @@
+miniconda3/
+saliency_maps/
+*.pkl
+*.nii
+*.nii.gz
+*.h5
+*.pth
+*.pt
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
